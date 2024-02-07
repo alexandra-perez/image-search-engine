@@ -1,9 +1,9 @@
-/* || RESET */
+/* || Reset */
 * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 body {
@@ -12,50 +12,52 @@ body {
 }
 
 h1 {
-    text-align: center;
-    margin: 100px auto 50px;
     font-weight: 600;
+    margin: 100px auto 50px;
+    text-align: center;
 }
 
 p {
-    text-align: center;
     font-size: 20px;
-    padding-bottom: 20px;
     font-style: italic;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
+/* || Search */
 form {
-    width: 90%;
-    max-width: 600;
-    margin: auto;
-    height: 80px;
-    background: #f2f2f7;
-    display: flex;
     align-items: center;
+    background: #f2f2f7;
     border-radius: 8px;
+    display: flex;
+    height: 80px;
+    margin: auto;
+    max-width: 600;
+    width: 90%;
 }
 
 form input {
-    flex: 1;
-    height: 100%;
-    border: 0;
-    outline: 0;
     background: transparent;
+    border: 0;
+    border-radius: 5px;
     color: #232222;
+    flex: 1;
     font-size: 18px;
+    height: 100%;
+    outline: 0;
     padding: 0 30px;
 }
 
 form button {
-    padding: 0 40px;
-    height: 100%;
     background: #e7330f;
-    color: #fff;
-    font-size: 18px;
-    border: 0;
-    outline: 0;
     border-radius: 0px 8px 8px 0px;
+    border: 0;
+    color: #fff;
     cursor: pointer;
+    font-size: 20px;
+    height: 100%;
+    outline: 0;
+    padding: 0 40px;
 }
 
 ::placeholder {
@@ -65,41 +67,38 @@ form button {
 
 #show-more-btn {
     background: #e7330f;
-    color: #fff;
-    border: 0;
-    outline: 0;
-    padding: 10px 20px;
     border-radius: 4px;
-    margin: 10px auto 100px;
+    border: 0;
+    color: #fff;
     cursor: pointer;
     display: none;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 10px auto 100px;
+    outline: 0;
+    padding: 10px 20px;
 }
 
+/* || User Search Results */
 #search-result {
-    width: 80%;
-    margin: 100px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 100px auto;
+    width: 80%;
 }
 
 #search-result img {
-    width: 100%;
+    border-radius: 5px;
     height: 230px;
     object-fit: cover;
-    border-radius: 5px;
-}
-
-#footer {
-    text-align: center;
+    width: 100%;
 }
 
 a:link, a:visited {
+    color: #4d21fa;
     text-decoration: none;
-    color: #fff;
 }
 
-a:hover, a:active {
+a:any-link {
     color: #4d21fa;
 }
